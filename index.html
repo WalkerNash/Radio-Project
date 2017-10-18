@@ -8,24 +8,24 @@
   <link rel="stylesheet" href="index.css">
 </head>
 
-<body style="background-image: url('bgs/11.gif');">
+<body style="background-image: url('bgs/11.gif')">
   <div class="container">
     <div class="grid">1</div>
     <div class="grid">2</div>
     <div class="grid">3</div>
     <div class="grid">4</div>
-    <div class="window description">
+    <div class="window description" id='window'>
     <div class="inner">
       <div class="header">
         <div class="sprite windows-application-icon"></div>
-        V a p e p l a y e r 第五計画
-        <div class="sprite windows-application-controls"></div>
+        V a p e p l a y e r  第 五 計 画
+        <div class="sprite windows-application-controls"><button name='Win98'>X</button></div>
       </div>
       <div class="content">
         <div class="inner">
-          <button type="button" name="Play"><p>Play/Pause</p></button>
-          <button type="button" name="Stop"><h2>Stop</h2></button>
-          <button type="button" name="Next"><h1>Next</h1></button>
+          <button type="button" name="playPause"><p>Play/Pause</p></button>
+          <button type="button" name="stopBtn"><h2>Stop</h2></button>
+          <button type="button" name="nextBtn"><h1>Next</h1></button>
         </div>
       </div>
     </div>
@@ -49,8 +49,9 @@
   </div>
   <audio autoplay volume="0.85">
       <source src="audio/win95.mp3" type="audio/mp3"></audio>
-
+  <button class="openBtn"></button>
   <script src='index.js'></script>
+  <script src='controls.js'></script>
 </body>
 
 </html>
