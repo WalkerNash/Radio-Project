@@ -15,27 +15,29 @@
     <div class="grid">3</div>
     <div class="grid">4</div>
     <div class="window description" id='window'>
-    <div class="inner">
-      <div class="header">
-        <div class="sprite windows-application-icon"></div>
-        V a p e p l a y e r  第 五 計 画
-        <div class="sprite windows-application-controls"><button name='Win98'>X</button></div>
-      </div>
-      <div class="content">
-        <div class="inner">
-          <button type='button' id='play'><h2>Play</h2></button>
-          <button type="button" id="playPause"><h2>Pause</h2></button>
-          <button type="button" id="stopBtn"><h2>Stop</h2></button>
-          <button type="button" id="nextBtn"><h2>Next</h1></button>
+      <div class="inner">
+        <div class="header">
+          <div class="sprite windows-application-icon"></div>
+          V a p e p l a y e r 第 五 計 画
+          <div class="sprite windows-application-controls"><button name='Win98'>X</button></div>
+        </div>
+        <div class="content">
+          <div class="inner">
+            <div class="innerImg"><img id = 'innerImg' src="placeholder.png" alt='beep'></div>
+            <div id="trackInfo"></div>
+            <button type='button' id='playBtn'><h2>Play</h2></button>
+            <button type="button" id="pauseBtn"><h2>Pause</h2></button>
+            <button type="button" id="stopBtn"><h2>Stop</h2></button>
+            <button type="button" id="nextBtn"><h2>Next</h1></button>
+          </div>
         </div>
       </div>
     </div>
+    <div class="grid">6</div>
+    <div class="grid">7</div>
+    <div class="grid">8</div>
+    <div class="grid">9</div>
   </div>
-  <div class="grid">6</div>
-  <div class="grid">7</div>
-  <div class="grid">8</div>
-  <div class="grid">9</div>
-</div>
 
   <div class="start-bar-outer">
     <div class="start-bar">
@@ -48,10 +50,10 @@
       <div class="start-left-smaller-separator"></div>
     </div>
   </div>
-  <audio autoplay volume="0.85" src="audio/82-99.mp3" type='audio/mp3'></audio>
-  <button class="openBtn"></button>
-  <script src='index.js'></script>
-  <script src='controls.js'></script>
-</body>
+  <button id="openBtn"></button>
 
+  <script src="https://connect.soundcloud.com/sdk/sdk-3.2.2.js"></script>
+  <script src="env.js"></script>
+  <script src='index.js'></script>
+</body>
 </html>

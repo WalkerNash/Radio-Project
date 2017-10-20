@@ -11,6 +11,10 @@ body {
   width: 100vw;*/
 }
 
+.innerImg {
+  width: 100px;
+  height: 100px;
+}
 button.Win98 {
   background-color: #c0c0c0;
   border: 1px solid blue;
@@ -123,6 +127,11 @@ background: linear-gradient(to right, #094c99 0%,#2989d8 88%,#7db9e8 100%);
   background: transparent;
 }
 
+.inner {
+  display: grid;
+  grid-row-start: 1;
+  grid-row-end:   4;
+}
 p {
   margin: 0;
 }
