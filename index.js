@@ -8,6 +8,7 @@ var windowClass = document.getElementById('window').classList;
 var playIt      = document.getElementById('playBtn');
 var openBtn     = document.getElementById('openBtn');
 var innerImg    = document.getElementById('innerImg');
+var artistInfo  = document.getElementById('artistInfo');
 var trackInfo   = document.getElementById('trackInfo');
 
 (function(ENV) {
@@ -24,7 +25,10 @@ var trackInfo   = document.getElementById('trackInfo');
     let currentTrack = tracks[x];
     var trackList = tracks;
     innerImg.src = currentTrack.artwork_url;
-    trackInfo.innerHTML = currentTrack.permalink + "<br>" + currentTrack.title;
+    artistInfo.innerHTML = currentTrack.permalink;
+    artistInfo.href      = currentTrack.user.permalink_url;
+    trackInfo.innerHTML  = currentTrack.title;
+    trackInfo.href       = currentTrack.permalink_url;
     SC.stream('/tracks/' + currentTrack.id).then(function(player) {
       playIt.addEventListener ('click', function(){
         player.play();

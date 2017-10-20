@@ -129,13 +129,22 @@ background: linear-gradient(to right, #094c99 0%,#2989d8 88%,#7db9e8 100%);
 
 .inner {
   display: grid;
+  grid-template-columns:
   grid-row-start: 1;
   grid-row-end:   4;
+  text-decoration: none;
 }
 p {
   margin: 0;
 }
-
+a {
+text-decoration: none;
+text-decoration-color: black;
+}
+a:visited{
+  text-decoration: none;
+  text-decoration-color: black;
+}
 
 /*.sprite {
   background-image: url('https://dl.dropboxusercontent.com/u/16697297/themes/w98/spritev1.png');
