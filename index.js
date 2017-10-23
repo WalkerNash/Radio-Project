@@ -23,7 +23,7 @@ var trackInfo   = document.getElementById('trackInfo');
   }).then(function(tracks) {
     let x = 1;
     let currentTrack = tracks[x];
-    var trackList = tracks;
+    // var trackList = tracks;
     innerImg.src = currentTrack.artwork_url;
     artistInfo.innerHTML = currentTrack.permalink;
     artistInfo.href      = currentTrack.user.permalink_url;

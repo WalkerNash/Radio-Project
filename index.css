@@ -137,7 +137,7 @@ background: linear-gradient(to right, #094c99 0%,#2989d8 88%,#7db9e8 100%);
 p {
   margin: 0;
 }
-a {
+a: {
 text-decoration: none;
 text-decoration-color: black;
 }
